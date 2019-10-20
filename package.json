@@ -1,0 +1,37 @@
+{
+  "name": "tera-momobob-new",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.10",
+    "dotenv": "^8.0.0",
+    "dotenv-safe": "^6.1.0",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.1",
+    "sequelize": "^5.9.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node ./server/index.ts",
+    "nodemon": "nodemon --watch src --delay 1 --exec 'ts-node' ./server/index.ts",
+    "prod": "yarn run build && yarn run start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
